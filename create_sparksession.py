@@ -19,7 +19,7 @@ def create_sparksession(app_name, master="local", hive_suppport=True):
     
     Returns
     -------
-    SparkSession :   SparkSession
+    SparkSession :   Returns a new spark session        
 """
     session = SparkSession.builder.master(master).appName(app_name)
     if hive_suppport:
